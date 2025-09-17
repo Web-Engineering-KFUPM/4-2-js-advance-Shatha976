@@ -21,6 +21,26 @@ Task:
 3) Add a setter updateGpa(newGpa) or use a set accessor for gpa that validates 0.0–4.0.
 4) Create an instance/object and output its attributes using the getter(s).
 */
+const student = {
+   first: "Shatha",
+   last: "Alharbi",
+   gpa: 3.8,             
+   get fullName() {       
+     return this.first + " " + this.last;
+   },
+   get Gpa() {            
+      return this.gpa;
+    },
+   set updateGpa(newGpa) {       
+     if (newGpa >= 0 && newGpa <= 4) {
+       this.gpa = newGpa;
+     }
+   }
+ };
+ console.log("student full name: ", student.fullName)
+ console.log("GPA", student.Gpa)
+
+
 
 // ====================================
 // TODO-2: OBJECT AS MAP + for...in LOOP
