@@ -84,7 +84,7 @@ const d = new Date();
 console.log(d.getDate());
 console.log(d.getMonth()+1);
 console.log(d.getFullYear());
-console.log(d.getMonth()+1);
+
 
 
 // ============================================================
@@ -96,6 +96,10 @@ Task:
 2) Use spread syntax with Math.min(...) and Math.max(...) to find extremes.
 3) Display both values.
 */
+const nums = [1,7,12,16,20,23,35,42]
+const min = Math.min(...nums);
+const max = Math.max(...nums);
+console.log("the min: ", min, " the max: ", max)
 
 // ===================================================================
 // TODO-6: EXCEPTIONS — try/catch/finally with EMPTY ARRAY edge case
